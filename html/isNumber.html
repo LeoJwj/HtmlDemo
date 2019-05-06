@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>isNumber</title>
+</head>
+<body>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("demo").value;
+    if (x == "" || isNaN(x)) {
+      alert("Not Numeric")
+    }
+  }
+
+</script>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">点击这里</button>
+
+</body>
+</html>
