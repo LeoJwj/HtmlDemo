@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Html Dom事件</title>
+
+  <script>
+    function checkCookies() {
+      if (navigator.cookieEnabled === true) {
+        alert("已启用 cookie")
+      } else {
+        alert("未启用 cookie")
+      }
+    }
+
+    function leavePage() {
+      alert("离开页面")
+    }
+
+    function myFunction() {
+      var x = document.getElementById("fname");
+      x.value = x.value.toUpperCase()
+    }
+  </script>
+</head>
+<body onload="checkCookies()" onunload="leavePage()">
+<p>提示框会告诉你，浏览器是否开启了cookie</p>
+</br>
+<p>请输入英文字符</p><input id="fname" type="text" onchange="myFunction()">
+</br>
+<p>当您离开输入字段时，会触发将输入文本转换为大写的函数。</p>
+</body>
+</html>

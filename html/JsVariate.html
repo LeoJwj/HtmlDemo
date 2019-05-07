@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Js变量</title>
+  <script>
+    function resetVarVariate() {
+      var variate = 4;
+      var variate;
+      alert(variate);
+    }
+    function resetVarVariate2() {
+      var variate = 4;
+      var variate = new String();
+      alert(variate);
+    }
+
+    function undefinedVariate() {
+      var temp;
+      alert(temp);
+      alert(temp === undefined)
+    }
+
+
+    function customObject() {
+      var object = {firstname: "Bill", lastname: "Gates", id: "5566"};
+      alert(object.firstname);
+      alert(object.lastname);
+    }
+  </script>
+</head>
+
+<button onclick="resetVarVariate()">变量重新声明是否会重置值</button>
+</br>
+<button onclick="resetVarVariate()">变量重新声明是否会重置值2</button>
+</br>
+<button onclick="undefinedVariate()">未赋值的变量</button>
+</br>
+<button onclick="customObject()">自定义对象</button>
+</body>
+</html>
